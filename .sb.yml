@@ -1,0 +1,29 @@
+name: 'univ'
+type: 'php'
+version: '8.1'
+
+docroot: web
+
+envs:  
+  SHA_SALT: hello-world-1234
+  CONFIG_VARS: '{"test":"hello world"}'
+
+  
+mounts:
+  upload-data:
+    mountPath: web/sites/default/files
+    size: 2Gi
+    backup: false
+
+
+services:
+  - db1:
+      type: 'mysql'
+      version: '10'
+      size: 2Gi
+      backup: false
+  
+resources:
+  cpu: 10m
+  memory: 256Mi
+    
