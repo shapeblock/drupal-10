@@ -17,11 +17,11 @@ mounts:
 
 
 services:
-  - db1:
-      type: 'mysql'
-      version: '10'
-      size: 2Gi
-      backup: false
+  db1:
+    type: 'mysql'
+    version: '10'
+    size: 2Gi
+    backup: false
   
 resources:
   cpu: 10m
