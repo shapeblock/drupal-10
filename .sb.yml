@@ -7,13 +7,11 @@ envs:
   SHA_SALT: hello-world-1234
   CONFIG_VARS: '{"test":"hello world"}'
 
-  
 mounts:
-  upload-data:
-    mountPath: web/sites/default/files
+  public-files:
+    mountPath: /workspace/web/sites/default/files
     size: 2Gi
     backup: false
-
 
 services:
   db1:
