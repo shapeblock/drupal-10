@@ -21,6 +21,6 @@ services:
     backup: false
   
 resources:
-  cpu: 10m
-  memory: 256Mi
+  cpu: "1"
+  memory: "1GiB"
     
