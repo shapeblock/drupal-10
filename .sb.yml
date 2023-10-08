@@ -22,5 +22,5 @@ services:
   
 resources:
   cpu: "1"
-  memory: "1GiB"
+  memory: "1Gi"
     
