@@ -1,4 +1,8 @@
 <?php
+use Drupal\Core\Installer\InstallerKernel;
+
+
+$config['system.logging']['error_level'] = 'verbose';
 
   $databases['default']['default'] = [
     'driver' => 'mysql',
@@ -12,5 +16,6 @@
     ],
   ];
 
+$settings['trusted_host_patterns'] = ['.*'];
 $settings['hash_salt'] = getenv('HASH_SALT');
 
