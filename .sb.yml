@@ -24,3 +24,7 @@ resources:
   cpu: "1"
   memory: "1Gi"
     
+permissions:
+  - path: web/sites/default/settings.php
+    mode: a+w
+
