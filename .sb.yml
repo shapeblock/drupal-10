@@ -4,7 +4,7 @@ version: '8.2'
 docroot: web
 
 envs:  
-  SHA_SALT: hello-world-1234
+  HASH_SALT: hello-world-1234
   CONFIG_VARS: '{"test":"hello world"}'
 
 mounts:
